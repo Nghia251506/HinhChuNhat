@@ -8,8 +8,8 @@ public class Main {
 		hcn.nhap();
 		//tinh chu vi va dien tich
 		System.out.println("----------------------------------------------");
-		System.out.println("Chu vi hinh chu nhat la: " + hcn.TinhChuVi());
-		System.out.println("Dien tich hinh chu nhat la: " + hcn.TinhDienTich());
+		hcn.TinhChuVi();
+		hcn.TinhDienTich();
 	}
 
 }
