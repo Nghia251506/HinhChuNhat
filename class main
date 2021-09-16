@@ -1,0 +1,15 @@
+package comunityuni.com;
+
+public class Main {
+
+	public static void main(String[] args) {
+		HinhChuNhat hcn = new HinhChuNhat();
+		//Nguoi dung nhap chieu dai va chieu rong
+		hcn.nhap();
+		//tinh chu vi va dien tich
+		System.out.println("----------------------------------------------");
+		System.out.println("Chu vi hinh chu nhat la: " + hcn.TinhChuVi());
+		System.out.println("Dien tich hinh chu nhat la: " + hcn.TinhDienTich());
+	}
+
+}
