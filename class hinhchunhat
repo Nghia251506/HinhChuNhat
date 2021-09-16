@@ -3,10 +3,9 @@ package comunityuni.com;
 import java.util.Scanner;
 
 public class HinhChuNhat {
-	Scanner scanner = new Scanner(System.in);
 	private double Chieu_dai , Chieu_rong; 
 	
-	//Khoi tạo costructor
+	//Khoi tạo costructor 
 	public HinhChuNhat(double Chieu_dai, double Chieu_rong)
 	{
 		this.Chieu_dai = Chieu_dai; 
@@ -15,6 +14,7 @@ public class HinhChuNhat {
 	
 	public HinhChuNhat() 
 	{}
+	
 	//Khoi tao getter va setter
 	public double getCd()
 	{
@@ -31,7 +31,9 @@ public class HinhChuNhat {
 	public void setCr() {
 		this.Chieu_rong = Chieu_rong; 
 	}
+	
 	//Khoi tao constructor nhap vao cdai, crong
+	Scanner scanner = new Scanner(System.in);
 		public void nhap()
 		{
 			System.out.println("Nhap chieu dai: ");
@@ -40,13 +42,14 @@ public class HinhChuNhat {
 			Chieu_rong = scanner.nextDouble();
 		}
 	
-	double TinhChuVi() {
+	void TinhChuVi() {
+		System.out.println("Chu vi hcn la: " + ((Chieu_dai + Chieu_rong) * 2));
 		
-		return (Chieu_dai + Chieu_rong) * 2;
 	}
 	
-	double TinhDienTich()
+	void TinhDienTich()
 	{
-		return Chieu_dai * Chieu_rong;
+		System.out.println("Dien tich hcn la: " + (Chieu_dai * Chieu_rong));
 	}
 }
+
