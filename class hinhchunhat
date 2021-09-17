@@ -3,7 +3,8 @@ package comunityuni.com;
 import java.util.Scanner;
 
 public class HinhChuNhat {
-	private double Chieu_dai , Chieu_rong; 
+	private double Chieu_dai; 
+	private double Chieu_rong;
 	
 	//Khoi tạo costructor 
 	public HinhChuNhat(double Chieu_dai, double Chieu_rong)
@@ -20,7 +21,7 @@ public class HinhChuNhat {
 	{
 		return Chieu_dai;
 	}
-	public void setCd() {
+	public void setCd(double Chieu_dai) {
 		this.Chieu_dai = Chieu_dai; 
 	}
 	
@@ -28,7 +29,7 @@ public class HinhChuNhat {
 	{
 		return Chieu_rong;
 	}
-	public void setCr() {
+	public void setCr(double Chieu_rong) {
 		this.Chieu_rong = Chieu_rong; 
 	}
 	
@@ -52,4 +53,3 @@ public class HinhChuNhat {
 		System.out.println("Dien tich hcn la: " + (Chieu_dai * Chieu_rong));
 	}
 }
-
